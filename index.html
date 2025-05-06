@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUIÓS - Catálogo de Brindes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>HUIÓS</h1>
+            <nav>
+                <a href="#abridores">Abridors</a>
+                <a href="#chaveiros">Chaveiros</a>
+                <a href="#copos">Copos Térmicos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h2>Brindes Personalizados Direto da Fábrica</h2>
+            <p>Qualidade e preço para sua empresa!</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Abridores -->
+        <section class="produtos" id="abridores">
+            <h2>Abridor de Lata</h2>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img 
+                        src="images/imag1.jpeg" 
+                        alt="Abridor de Lata Multifuncional"
+                        data-nome="Abridor de Lata Multifuncional - Um brinde versátil com lâminas e abridor de garrafa!"
+                        class="img-produto"
+                        data-descrição="Um brinde versátil com lâminas e abridor de garrafa!">
+                    <h3>Abridor de Lata Multifuncional</h3>
+                    <p>Um brinde versátil com lâminas e abridor de garrafa!</p>
+                </div>
+                <div class="card-produto">
+                    <img 
+                        src="images/img2.jpeg" 
+                        alt="Abridor Clássico"
+                        data-nome="Abridor Clássico - Personalize com sua marca."
+                        class="img-produto"
+                        data-descrição="Abridor Clássico - Personalize com sua marca.">
+                    <h3>Abridor Clássico</h3>
+                    <p>Personalize com sua marca.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chaveiros -->
+        <section class="produtos" id="chaveiros">
+            <h2>Chaveiros</h2>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img 
+                        src="images/img3.jpeg"
+                        alt="Chaveiro Metálico"
+                        data-nome="Chaveiro Metálico - Ideal para presentes corporativos."
+                        class="img-produto"
+                        data-descrição="Chaveiro Metálico - Ideal para presentes corporativos.">
+                    <h3>Chaveiro Metálico</h3>
+                    <p>Ideal para presentes corporativos.</p>
+                </div>
+                <div class="card-produto">
+                    <img 
+                        src="images/img4.jpeg"
+                        alt="Chaveiro Acrílico"
+                        data-nome="Chaveiro Acrílico - Leve sua marca para todo lugar!"
+                        class="img-produto"
+                        data-deescrição="Chaveiro Acrílico - Leve sua marca para todo lugar!">
+                    <h3>Chaveiro Acrílico</h3>
+                    <p>Leve sua marca para todo lugar!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copos Térmicos -->
+        <section class="produtos" id="copos">
+            <h2>Copos Térmicos</h2>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img 
+                        src="https://images.unsplash.com/photo-1526178613658-3fb98dc1d6b6?auto=format&fit=crop&w=400&q=80"
+                        alt="Copo Térmico Prata"
+                        data-nome="Copo Térmico Prata - Mantém sua bebida gelada por mais tempo!"
+                        class="img-produto">
+                    <h3>Copo Térmico Prata</h3>
+                    <p>Mantém sua bebida gelada por mais tempo!</p>
+                </div>
+                <div class="card-produto">
+                    <img 
+                        src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
+                        alt="Copo Térmico Preto"
+                        data-nome="Copo Térmico Preto - Personalização com sua logo!"
+                        class="img-produto">
+                    <h3>Copo Térmico Preto</h3>
+                    <p>Personalização com sua logo!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Visualizar Produto -->
+    <div id="modal-visualizar" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-box">
+          <img class="modal-conteudo" id="img-modal">
+          <div id="modal-descricao">
+            <h2 id="caption"></h2>
+            <p id="descricao-produto"></p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HUIÓS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
