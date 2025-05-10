@@ -237,3 +237,15 @@ footer {
     right: 850px;  /* ajuste se quiser mais à direita ou à esquerda */
     /* ... outras propriedades que você já tem ... */
 }
+@media (max-width: 600px) {
+  #zap-catalogo {
+    top: unset;
+    bottom: 20px;
+    right: 20px;
+    left: unset;
+    position: fixed;
+    z-index: 1001;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+}
