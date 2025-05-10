@@ -234,7 +234,7 @@ footer {
  #zap-catalogo {
     position: fixed;
     top: 40px;     /* quanto menor, mais próximo do topo */
-    right: 850px;  /* ajuste se quiser mais à direita ou à esquerda */
+    right: 24px;  /* ajuste se quiser mais à direita ou à esquerda */
     /* ... outras propriedades que você já tem ... */
 }
 @media (max-width: 600px) {
