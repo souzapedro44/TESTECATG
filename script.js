@@ -31,4 +31,32 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         };
     }
+};
+ const btnZap = document.getElementById("zap-catalogo");
+
+let produtoSelecionado = "";
+// Substitua pelo número da sua empresa e personalize a mensagem
+const whatsappNumber = "5544991782603";
+const mensagem = "Olá, gostei de um produto do catálogo e gostaria de saber mais!";
+
+
+document.getElementById("zap-catalogo").onclick = function() {
+    // Monta o link com mensagem codificada
+    const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(mensagem);
+    window.open(url, "_blank");
+ } 
+ })
+// Mostra o botão apenas após selecionar um produto (exemplo)
+document.querySelectorAll('.selecionar-produto').forEach(btn => {
+    btn.addEventListener('click', function() {
+        produtoSelecionado = this.parentElement.getAttribute("data-nome");
+        btnZap.classList.add("show");
+    });
 });
+
+btnZap.onclick = function() {
+    if (!produtoSelecionado) return;
+    const mensagem = `Olá, tenho interesse no produto "${produtoSelecionado}".`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+}
