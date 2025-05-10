@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         };
     }
-};
+});
  const btnZap = document.getElementById("zap-catalogo");
 
 let produtoSelecionado = "";
