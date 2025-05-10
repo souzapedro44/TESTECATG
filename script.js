@@ -45,7 +45,7 @@ document.getElementById("zap-catalogo").onclick = function() {
     const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(mensagem);
     window.open(url, "_blank");
  } 
- })
+ 
 // Mostra o botão apenas após selecionar um produto (exemplo)
 document.querySelectorAll('.selecionar-produto').forEach(btn => {
     btn.addEventListener('click', function() {
@@ -60,3 +60,5 @@ btnZap.onclick = function() {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
 }
+})
+
