@@ -218,3 +218,22 @@ footer {
     padding: 10px 0;
     margin-top: 40px;
 }
+#zap-catalogo {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#zap-catalogo:hover {
+    background-color: #20b358;
+ }
+ #zap-catalogo {
+    position: fixed;
+    top: 40px;     /* quanto menor, mais próximo do topo */
+    right: 850px;  /* ajuste se quiser mais à direita ou à esquerda */
+    /* ... outras propriedades que você já tem ... */
+}
